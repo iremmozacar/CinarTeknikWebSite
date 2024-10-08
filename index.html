@@ -298,29 +298,25 @@
           <div class="imageblock position-relative">
             <img class="img-fluid" src="images/about.png" alt="img">
             <div class="video-player position-absolute top-50 start-50 translate-middle">
-              <a type="button" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/W_tIumKa8VY"
-                data-bs-target="#myModal" class="play-btn position-relative">
-                <svg class="play-icon text-primary my-3" width="80" height="80">
-                  <use xlink:href="#play-button"></use>
+          
                 </svg>
             </div>
             </a>
           </div>
         </div>
         <div class="col-lg-7 mt-5">
-          <h6><span class="text-primary">|</span>Hakkımızda</h6>
-          <h3 class="display-6 fw-semibold mb-4">Çınar Teknik <div></div>
-          </h3>
-          <p>Çınar Teknik, Kırklareli'de beyaz eşya ve klima alanında uzman teknik servis hizmetleri sunan yerel bir
-            işletmedir. Ev ve iş
-            yerlerinizde klima, beyaz eşya bakım ve onarım hizmetlerinde profesyonel destek sağlıyoruz.
-            Güvenilir, hızlı ve uygun fiyatlı çözümler sunarak, cihazlarınızı en iyi performansla kullanmanızı
-            sağlıyoruz.</p>
-
-          <p class="fw-semibold m-0">Güvenilir Teknik Servis</p>
-          <p>Kaliteli hizmet anlayışımızla, müşterilerimize pratik ve güvenilir teknik destek sunarak konforunuzu en üst
-            seviyeye
-            çıkarmayı hedefliyoruz. Sorunlarınızı en kısa sürede çözmek için buradayız.</p>
+        <h6><span class="text-primary">|</span>Hakkımızda</h6>
+        <h3 class="display-6 fw-semibold mb-4">Çınar Teknik</h3>
+        <p>2024 Temmuz ayında faaliyete geçen Çınar Teknik, Lüleburgaz, Babaeski, Pınarhisar ve Kırklareli merkez bölgelere
+          hizmet veren yerel bir işletmedir. Beyaz eşya ve klima alanında uzmanlaşmış teknik servis hizmetleri sunmaktayız. Ev
+          ve iş yerlerinizde klima ve beyaz eşya bakım ve onarım ihtiyaçlarınıza profesyonel çözümler üretiyoruz.</p>
+        
+        <p>Güvenilir, hızlı ve uygun fiyatlı hizmetlerimizle, cihazlarınızı en yüksek verimle kullanmanızı sağlamak için
+          çalışıyoruz.</p>
+        
+        <p class="fw-semibold m-0">Güvenilir Teknik Servis</p>
+        <p>Kaliteli hizmet anlayışımızla, müşterilerimize pratik ve güvenilir teknik destek sunarak konforunuzu en üst seviyeye
+          çıkarıyoruz. Yaşadığınız sorunları en kısa sürede çözmek için buradayız.</p>
 
           <a href="index.html" class="btn btn-primary btn-slide hover-slide-right mt-4">
             <span>Daha Fazla Bilgi</span>
@@ -405,35 +401,34 @@
     </div>
   </section>
 
-  <section id="quote" class="padding-small">
-    <div class="container text-center">
-      <h3 class="display-6 fw-semibold mb-4">Uzmanlarımızla İletişime Geçin</h3>
-      <form class="contact-form row mt-5">
-        <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-          <input type="text" name="name" placeholder="Adı*" class="form-control w-100 ps-3 py-2 rounded-0" required>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-          <input type="email" name="email" placeholder="Email*" class="form-control w-100 ps-3 py-2 rounded-0" required>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-          <input type="text" name="phone" placeholder="Numara*" class="form-control w-100 ps-3 py-2 rounded-0" required>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
-          <input type="text" name="address" placeholder="Adres*" class="form-control w-100 ps-3 py-2 rounded-0"
-            required>
-        </div>
-        <div class="col-md-12 col-sm-12 mb-4">
-          <textarea class="form-control w-100 ps-3 py-2 rounded-0" rows="6" type="text" name="message"
-            placeholder="Mesaj"></textarea>
-        </div>
-        <div class="col-12">
-          <a href="index.html" class="btn btn-primary btn-slide hover-slide-right mt-4">
-            <span>Gönder</span>
-          </a>
-        </div>
-      </form>
-    </div>
-  </section>
+<section id="quote" class="padding-small">
+  <div class="container text-center">
+    <h3 class="display-6 fw-semibold mb-4">Uzmanlarımızla İletişime Geçin</h3>
+    <form class="contact-form row mt-5" action="send_mail.php" method="POST">
+      <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+        <input type="text" name="name" placeholder="Adı*" class="form-control w-100 ps-3 py-2 rounded-0" required>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+        <input type="email" name="email" placeholder="Email*" class="form-control w-100 ps-3 py-2 rounded-0" required>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+        <input type="text" name="phone" placeholder="Numara*" class="form-control w-100 ps-3 py-2 rounded-0" required>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+        <input type="text" name="address" placeholder="Adres*" class="form-control w-100 ps-3 py-2 rounded-0" required>
+      </div>
+      <div class="col-md-12 col-sm-12 mb-4">
+        <textarea class="form-control w-100 ps-3 py-2 rounded-0" rows="6" type="text" name="message"
+          placeholder="Mesaj"></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary btn-slide hover-slide-right mt-4">
+          <span>Gönder</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
 
   <section id="project">
     <div class="container">
@@ -680,29 +675,30 @@
             </ul>
           </div>
         </div>
+        
         <div class="col-lg-3 col-md-6 pb-3">
           <div class="footer-menu">
-            <h5 class=" widget-title py-2 mt-3 fw-semibold">Our HVAC Info</h5>
+            <h5 class=" widget-title py-2 mt-3 fw-semibold">Çınar Teknik </h5>
             <ul class="menu-list d-flex flex-column list-unstyled">
               <li class="fw-medium text-capitalize d-flex align-items-center">
                 <svg class="text-primary me-1" width="18" height="18">
                   <use xlink:href="#location"></use>
-                </svg><a href="#"> Phoenix, Arizona </a>
+                </svg><a href="#"> Karacaibrahim Mh. Dereüstü Sk. Güzel Ocak Apt. B blok No:46 Kırklareli/Merkez </a>
               </li>
-              <li class="fw-medium text-capitalize d-flex align-items-center">
+              <!-- <li class="fw-medium text-capitalize d-flex align-items-center">
                 <svg class="text-primary me-1" width="18" height="18">
                   <use xlink:href="#email"></use>
                 </svg><a href="#"> Youremail@gmail.com </a>
-              </li>
+              </li> -->
               <li class="fw-medium text-capitalize d-flex align-items-center">
                 <svg class="text-primary me-1" width="18" height="18">
                   <use xlink:href="#phone"></use>
-                </svg><a href="#"> 888 333 9999 </a>
+                </svg><a href="#"> Telefon: 0 543 260 17 47 </a>
               </li>
               <li class="fw-medium text-capitalize d-flex align-items-center">
                 <svg class="text-primary me-1" width="18" height="18">
                   <use xlink:href="#clock"></use>
-                </svg><a href="#"> 8:00-18:00, Sat: Closed </a>
+                </svg><a href="#"> 8:30-18:00 </a>
               </li>
             </ul>
           </div>
